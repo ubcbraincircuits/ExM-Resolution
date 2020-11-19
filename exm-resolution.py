@@ -55,7 +55,6 @@ wav_color_dict = {200: 'purple',
 
 for wavelength in range(200,600,100):
   wav_pix = physical_size_x/wavelength*1000
-  print(wav_pix)
   radius = wav_pix*804
   circ = plt.Circle((402,402),radius,fill=False,label=str(wavelength) + " nm",
                     color=wav_color_dict[wavelength])
